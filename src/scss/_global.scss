@@ -1,0 +1,21 @@
+/* =========== Start Global Styles =========== */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $yellow;
+  color: $white;
+  width: 12.188rem;
+  height: 3.313rem;
+  border: 3px solid $yellow;
+  transition: 0.3s cubic-bezier(0.61, 1, 0.88, 1);
+  font-family: $spacemono;
+}
+
+.btn:hover,
+.btn:focus {
+  background: transparent;
+  color: $yellow;
+  border: 3px solid $yellow;
+}
+/* =========== End Global Styles =========== */

@@ -1,0 +1,512 @@
+@import "fonts";
+@import "reset";
+@import "variables";
+@import "global";
+@import "header";
+@import "hero";
+@import "facility";
+@import "sign-up";
+@import "footer";
+@import "media-query";
+
+/* =========== Start Hero Section =========== */
+.about-hero {
+  background: url("../assets/images/about-hero-mobile.jpg");
+  height: 160px;
+
+  @media (min-width: 1024px) {
+    height: 200px;
+  }
+}
+
+.white-circle {
+  display: none;
+}
+
+.hero {
+  @media (min-width: 768px) {
+    max-height: 160px;
+  }
+
+  @media (min-width: 1024px) {
+    max-height: 200px;
+  }
+}
+
+.hero-desc {
+  padding: 3.2rem 2rem;
+  top: 0;
+}
+/*  =========== End Hero Section  =========== */
+
+/* =========== Start Facility Section =========== */
+.facility-container {
+  margin: 5rem 0 0;
+}
+
+.facility .facility-text h2 {
+  font-size: 2rem;
+  color: $darknavy;
+}
+
+#about-arrow2 {
+  right: 8%;
+}
+/* =========== End Facility Section =========== */
+
+/* =========== Start Our Values Section =========== */
+.values-container h3 {
+  font-size: 2rem;
+  color: $darknavy;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.value {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.value-img {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.value-img img {
+  border-radius: 50%;
+}
+
+.fill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $yellow;
+  height: 96px;
+  width: 96px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: $darknavy;
+  position: absolute;
+  top: 75%;
+  right: 30%;
+  z-index: 10;
+  font-family: $spacemono;
+  font-weight: 700;
+}
+
+.value-text h4 {
+  font-size: 1.5rem;
+  font-family: $spacemono;
+  color: $darknavy;
+  padding: 1rem 0 1.75rem;
+  color: $darknavy;
+}
+
+.value-text p {
+  font-family: $lexenddeca;
+  font-size: 0.95rem;
+  line-height: 25px;
+  color: $dimgrey;
+}
+
+.value:last-child {
+  margin-bottom: 9rem;
+}
+/* =========== End Our Value Section =========== */
+
+/* =========== Start FAQs Section =========== */
+.faqs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 8rem;
+
+  h5 {
+    font-family: $spacemono;
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: -1.43px;
+    color: $darknavy;
+    padding: 0 0 3rem 0;
+  }
+}
+
+.faqs-all {
+  padding: 0rem 1.5rem 1rem;
+  width: 95%;
+
+  .faqs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.faqs-desc {
+  background-color: $snow;
+  padding: 2rem 1.8rem 2rem 2rem;
+  transition: 0.3s cubic-bezier(0.12, 0, 0.39, 0);
+  margin-bottom: 1rem;
+}
+
+.faqs-desc.active {
+  background-color: $lightyellow;
+}
+
+.faq-1,
+.faq-2 {
+  width: 100%;
+}
+
+.faqs-heading h6 {
+  font-family: $spacemono;
+  color: $darknavy;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  letter-spacing: -1.07px;
+}
+
+.arrow-down {
+  width: 16px;
+  height: 8px;
+}
+
+.faqs-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  line-height: 1.5rem;
+  letter-spacing: -0.8px;
+}
+
+.faqs-icon span {
+  color: $darknavy;
+  font-family: $spacemono;
+  font-weight: 700;
+  text-align: left;
+  padding: 1.2rem 0 1rem 0;
+  font-size: 1.125rem;
+  line-height: 25px;
+  letter-spacing: -0.8px;
+}
+
+.faqs-text p {
+  text-align: left;
+  color: $dark;
+  font-family: $lexenddeca;
+  font-size: 0.95rem;
+  line-height: 25px;
+}
+
+.faqs-text {
+  display: none;
+  animation-name: faqs-text;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes faqs-text {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.active span {
+  color: $dark;
+}
+
+.arrow-active {
+  transform: scaleY(-1);
+}
+
+.safe-driving {
+  align-items: center;
+  justify-content: center;
+}
+
+.safe-driving h6 {
+  text-align: center;
+  margin-top: 3rem;
+}
+/* =========== End FAQs Section =========== */
+
+/* =========== Start Media Query for Tablet =========== */
+
+@media only screen and (min-width: 768px) {
+  .white-circle {
+    display: block;
+  }
+
+  .about-hero {
+    background: url("../assets/images/about-hero-tablet.jpg");
+  }
+
+  .facility .facility-text h2 {
+    font-family: $spacemono;
+    font-size: 3rem;
+    line-height: 3rem;
+    letter-spacing: -2.14px;
+    width: 485px;
+    text-align: center;
+  }
+
+  .facility .facility-text p {
+    color: $dimgrey;
+    font-family: $lexenddeca;
+    font-size: 0.95rem;
+    line-height: 25px;
+  }
+
+  .values-container h3 {
+    font-size: 3rem;
+    margin-bottom: 6rem;
+  }
+
+  .value-text h4 {
+    font-size: 1.5rem;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+  }
+
+  .value-text p {
+    width: 457px;
+  }
+
+  .circle-about {
+    .outline,
+    .outline-2,
+    .fill-3 {
+      bottom: -111px;
+    }
+  }
+
+  .hero-desc-about {
+    padding: 3.5rem 2rem;
+
+    h1 {
+      text-align: start;
+    }
+  }
+
+  #about-arrow1 {
+    transform: rotateX(180deg);
+    top: 34.5%;
+  }
+
+  #about-arrow2 {
+    right: 54%;
+  }
+
+  .item-one picture::after {
+    top: -30px;
+  }
+
+  .value:last-child {
+    margin-bottom: 7.5rem;
+  }
+
+  .faqs-container h5 {
+    font-size: 3rem;
+    line-height: 3rem;
+    letter-spacing: -2.14px;
+  }
+
+  .faqs-heading h6 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing: -1.79px;
+  }
+
+  .faqs-icon span {
+    font-size: 1.5rem;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+  }
+}
+/* =========== End Media Query for Tablet =========== */
+
+/* =========== Start Media Query for Desktop =========== */
+@media only screen and (min-width: 1024px) {
+  .item-one .images {
+    max-width: 650px;
+    width: 50%;
+    img {
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+  .about-hero {
+    background: url("../assets/images/about-hero-desktop.jpg");
+    height: 200px;
+  }
+
+  #hero-desc-about {
+    left: 12.5%;
+
+    @media (min-width: 1024px) {
+      left: 187px;
+    }
+  }
+
+  .item-one .facility-text {
+    max-width: 650px;
+    width: 50%;
+
+    h2 {
+      width: 100%;
+    }
+
+    p {
+      width: 100%;
+    }
+  }
+
+  .value {
+    margin-bottom: 0;
+  }
+
+  .values {
+    margin-bottom: 7.5rem;
+  }
+
+  #about-arrow1 {
+    top: 58.5%;
+  }
+
+  #about-arrow2 {
+    top: -10%;
+    right: 63.5%;
+  }
+
+  .value:last-child {
+    margin-bottom: 3rem;
+  }
+
+  .facility .facility-text h2 {
+    text-align: left;
+  }
+
+  .facility .facility-text {
+    flex: 1;
+    max-width: 650px;
+    align-items: flex-start;
+  }
+
+  .values-container {
+    text-align: center;
+  }
+
+  .values {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .value-text p {
+    width: 350px;
+  }
+
+  .faqs-heading h6 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing: -1.79px;
+    text-align: start;
+  }
+
+  .faqs-heading {
+    width: 47%;
+    align-self: flex-start;
+  }
+
+  .faqs-all {
+    padding: 0 0 4rem 0;
+
+    .faqs {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+    }
+  }
+
+  #hero-about .hero-desc {
+    padding: 0;
+    top: 80px;
+  }
+
+  .faqs-text p {
+    width: 90%;
+  }
+
+  .circle {
+    .outline {
+      top: 80px;
+      right: 10%;
+    }
+    .outline-2 {
+      top: 80px;
+      right: 4%;
+    }
+    .fill-3 {
+      top: 80px;
+      right: -2%;
+    }
+  }
+
+  #about-facility-text {
+    padding: 2rem 0;
+  }
+
+  .value-text h4 {
+    font-size: 1.5rem;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+  }
+
+  .faqs-container {
+    padding: 0 8rem 0 10rem;
+  }
+
+  .faqs-all {
+    align-self: flex-start;
+    width: 100%;
+  }
+
+  .faqs-container h5 {
+    font-size: 3rem;
+    line-height: 3rem;
+    letter-spacing: -2.14px;
+  }
+
+  .values-container {
+    padding: 0 10rem;
+
+    .values {
+      justify-content: space-between;
+    }
+  }
+
+  .faqs-container {
+    margin-bottom: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .item-one picture::after {
+    right: -545px;
+  }
+}
+/* =========== End Media Query for Desktop =========== */

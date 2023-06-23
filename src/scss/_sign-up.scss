@@ -1,0 +1,51 @@
+/* =========== Start Sign up Section =========== */
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $darknavy;
+  color: $white;
+  position: relative;
+  padding: 5.5rem 2rem;
+  gap: 30px;
+}
+
+.signup picture {
+  position: absolute;
+  bottom: -7px;
+  right: 0;
+}
+
+.signup h4 {
+  font-size: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  letter-spacing: -1.43px;
+  padding: 0 0 2.5rem;
+}
+
+.signup-icon {
+  padding: 0 3.8rem 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0.8rem;
+
+  a:nth-child(1) {
+    width: 113px;
+    height: 40px;
+  }
+
+  a:nth-child(2) {
+    width: 130px;
+    height: 40px;
+  }
+
+  a img {
+    width: 100%;
+  }
+}
+/* =========== End Sign up Section =========== */

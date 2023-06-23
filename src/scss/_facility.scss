@@ -1,0 +1,63 @@
+/* =========== Start Facility Section =========== */
+.facility {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5rem;
+  justify-content: space-between;
+}
+
+.item-one picture {
+  position: absolute;
+  top: 21%;
+  left: -1%;
+}
+
+.item-two picture {
+  position: absolute;
+  top: 0;
+  right: 32%;
+}
+
+.item-three picture {
+  position: absolute;
+  top: 2%;
+  left: 35%;
+}
+
+.images .image {
+  width: 100%;
+  border-radius: 50%;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.facility-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3.5rem 2rem;
+
+  h2 {
+    line-height: 2rem;
+  }
+}
+
+.facility-text h3 {
+  font-size: 2rem;
+  color: $darknavy;
+  line-height: 28px;
+}
+
+.facility p {
+  color: $dimgrey;
+  font-family: $lexenddeca;
+  font-size: 0.95rem;
+  line-height: 25px;
+  padding: 2rem 0;
+}
+/* =========== End Facility Section =========== */

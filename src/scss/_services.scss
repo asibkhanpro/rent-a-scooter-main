@@ -1,0 +1,32 @@
+/* =========== Start Services Section =========== */
+.services {
+  padding: 6rem 1.2rem;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem 0;
+}
+
+.service img {
+  width: 56px;
+}
+
+.service h2 {
+  text-align: center;
+  color: $darknavy;
+  font-size: 1.25rem;
+  line-height: 28px;
+  padding: 1.5rem 0;
+}
+
+.service p {
+  text-align: center;
+  font-family: $lexenddeca;
+  color: $dimgrey;
+  font-size: 0.95rem;
+  line-height: 25px;
+}
+/* =========== End Services Section =========== */

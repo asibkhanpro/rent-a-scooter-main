@@ -1,0 +1,69 @@
+/* =========== Start Hero Section =========== */
+.hero {
+  background-image: url(../assets/images/home-hero-mobile.jpg);
+  background-repeat: no-repeat;
+  height: 650px;
+  background-size: cover;
+
+  @media (min-width: 768px) {
+    background-image: url(../assets/images/home-hero-tablet.jpg);
+  }
+
+  @media (min-width: 1024px) {
+    background-image: url(../assets/images/home-hero-desktop.jpg);
+  }
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-container picture {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 1.5rem;
+  position: absolute;
+  padding: 8.5rem 2rem 0;
+  top: 20%;
+}
+
+.hero-desc h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: $lightgrey;
+  line-height: 2.5rem;
+}
+
+.hero-desc p {
+  text-align: center;
+  color: $lightgrey;
+  padding: 1.5rem 0 2rem;
+  font-family: $lexenddeca;
+  font-size: 0.95rem;
+}
+
+.hero-desc a {
+  align-self: center;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 540px;
+  left: 0;
+}
+
+.orange-line-desktop {
+  display: none;
+}
+/* =========== End Hero Section =========== */

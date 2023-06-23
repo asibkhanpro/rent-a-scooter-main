@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locations</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./src/assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./dist/css/locationsStyle.css" />
+  </head>
+  <body>
+    <!-- =========== Start Header Section =========== -->
+    <header>
+      <section id="header">
+        <div class="header container">
+          <nav>
+            <div class="nav-bar">
+              <div class="logo">
+                <a href="./index.html"
+                  ><img src="./src/assets/logo.svg" alt="scoot logo"
+                /></a>
+              </div>
+              <div class="nav-list">
+                <div class="hamburger">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </div>
+                <ul class="nav-item">
+                  <li><a href="./about.html">About</a></li>
+                  <li><a href="#">Location</a></li>
+                  <li><a href="./careers.html">Careers</a></li>
+                  <li><a class="btn" href="#">Get Scootin</a></li>
+                </ul>
+              </div>
+              <div class="nav-btn">
+                <a class="btn" href="">Get Scootin</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+    </header>
+    <!-- =========== End Header Section =========== -->
+
+    <!-- =========== Start Hero Section =========== -->
+    <section class="hero" id="hero-section">
+      <div class="hero-container">
+        <div class="circle circle-locations" id="circle">
+          <div class="outline"></div>
+          <div class="outline-2"></div>
+          <div class="fill-3"></div>
+        </div>
+        <div class="hero-desc locations-hero-desc" id="hero-locations">
+          <div class="text">
+            <h1>Locations</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========== End Hero Section =========== -->
+
+    <!-- =========== Start Main Section =========== -->
+    <main>
+      <div class="main-container">
+        <!-- map section -->
+        <section>
+          <div class="map-container">
+            <div class="map-img">
+              <picture>
+                <source
+                  media="(min-width: 64rem)"
+                  srcset="./src/assets/images/world-map-desktop-dots.png"
+                />
+                <source
+                  media="(min-width: 48rem)"
+                  srcset="./src/assets/images/world-map-desktop-dots.png"
+                />
+                <img src="./src/assets/images/world-map-mobile.png" alt="" />
+              </picture>
+            </div>
+            <div class="mobile-desc">
+              <ul>
+                <li>new york</li>
+                <li>london</li>
+                <li>jakarta</li>
+                <li>yokohama</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- =========== End Map Section =========== -->
+
+        <!-- =========== Start Your City Section =========== -->
+        <div class="city-container">
+          <div class="city-desc">
+            <h2>Your City Not Listed?</h2>
+            <p>
+              If you’d like to see Scoot in your hometown, be sure to let us
+              know. We track requests and plan launches based on demand. Feel
+              free to message us by clicking the link or messaging us on social.
+            </p>
+            <a class="btn" href="#">Message Us</a>
+          </div>
+        </div>
+        <!-- =========== End Your City Section =========== -->
+      </div>
+    </main>
+    <!-- =========== End Main Section =========== -->
+
+    <!-- =========== Start Footer Section =========== -->
+    <footer>
+      <!--=========== Sign Up Section ===========-->
+      <section>
+        <div class="signup-container">
+          <div class="signup">
+            <div class="signup-heading">
+              <h4>Sign up and Scoot off today</h4>
+            </div>
+            <div class="signup-icon">
+              <a href="#"
+                ><img src="./src/assets/icons/app-store.svg" alt=""
+              /></a>
+              <a href="#"
+                ><img src="./src/assets/icons/google-play.svg" alt=""
+              /></a>
+            </div>
+            <picture>
+              <source
+                media="(min-width: 48rem)"
+                srcset="./src/assets/patterns/semi-circles.svg"
+              />
+              <img src="./src/assets/patterns/semi-circle-mobile.svg" alt="" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <!--=========== End Sign up Section ===========-->
+
+      <div class="footer-container">
+        <div class="footer-info">
+          <div class="footer-logo">
+            <a href="./index.html"
+              ><img src="./src/assets/logo.svg" alt=""
+            /></a>
+          </div>
+          <nav>
+            <ul class="nav-links">
+              <li><a href="./about.html">about</a></li>
+              <li><a href="#">location</a></li>
+              <li><a href="./careers.html">careers</a></li>
+            </ul>
+          </nav>
+          <ul class="social-icons">
+            <li>
+              <a href="#" title=" Join us on Facebook"
+                ><img src="./src/assets/icons/facebook.svg" alt="facebook icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#" title=" Join us on Twitter"
+                ><img src="./src/assets/icons/twitter.svg" alt="twitter icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#" title=" Join us on Instagram"
+                ><img
+                  src="./src/assets/icons/instagram.svg"
+                  alt="instagram icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- =========== End Footer Section =========== -->
+    <script src="./dist/js/index.js" defer></script>
+  </body>
+</html>
